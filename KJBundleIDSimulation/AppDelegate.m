@@ -18,10 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    //模拟包名
     NSString *fakeBundleId = @"com.company.fakeBundleId";
     NSLog(@"fakeBundleId: %@", fakeBundleId);
- 
+    //模拟包名
     [[NSBundle mainBundle] changeBundleIdentifier:(fakeBundleId && fakeBundleId.length > 0) ? fakeBundleId : nil];
     
     return YES;
