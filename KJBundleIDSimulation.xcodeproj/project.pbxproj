@@ -17,6 +17,7 @@
 		6801F1C02C6F3406003737C5 /* KJBundleIDSimulationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6801F1BF2C6F3406003737C5 /* KJBundleIDSimulationTests.m */; };
 		6801F1CA2C6F3406003737C5 /* KJBundleIDSimulationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6801F1C92C6F3406003737C5 /* KJBundleIDSimulationUITests.m */; };
 		6801F1CC2C6F3406003737C5 /* KJBundleIDSimulationUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6801F1CB2C6F3406003737C5 /* KJBundleIDSimulationUITestsLaunchTests.m */; };
+		6801F1DB2C6F34C0003737C5 /* NSBundle+changeBundleId.m in Sources */ = {isa = PBXBuildFile; fileRef = 6801F1DA2C6F34C0003737C5 /* NSBundle+changeBundleId.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		6801F1C52C6F3406003737C5 /* KJBundleIDSimulationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJBundleIDSimulationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6801F1C92C6F3406003737C5 /* KJBundleIDSimulationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBundleIDSimulationUITests.m; sourceTree = "<group>"; };
 		6801F1CB2C6F3406003737C5 /* KJBundleIDSimulationUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJBundleIDSimulationUITestsLaunchTests.m; sourceTree = "<group>"; };
+		6801F1D92C6F34C0003737C5 /* NSBundle+changeBundleId.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+changeBundleId.h"; sourceTree = "<group>"; };
+		6801F1DA2C6F34C0003737C5 /* NSBundle+changeBundleId.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+changeBundleId.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		6801F1A22C6F3404003737C5 /* KJBundleIDSimulation */ = {
 			isa = PBXGroup;
 			children = (
+				6801F1D82C6F344C003737C5 /* Category */,
 				6801F1A32C6F3404003737C5 /* AppDelegate.h */,
 				6801F1A42C6F3404003737C5 /* AppDelegate.m */,
 				6801F1A62C6F3404003737C5 /* SceneDelegate.h */,
@@ -134,6 +138,15 @@
 				6801F1CB2C6F3406003737C5 /* KJBundleIDSimulationUITestsLaunchTests.m */,
 			);
 			path = KJBundleIDSimulationUITests;
+			sourceTree = "<group>";
+		};
+		6801F1D82C6F344C003737C5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6801F1D92C6F34C0003737C5 /* NSBundle+changeBundleId.h */,
+				6801F1DA2C6F34C0003737C5 /* NSBundle+changeBundleId.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +283,7 @@
 				6801F1A52C6F3404003737C5 /* AppDelegate.m in Sources */,
 				6801F1B62C6F3406003737C5 /* main.m in Sources */,
 				6801F1A82C6F3404003737C5 /* SceneDelegate.m in Sources */,
+				6801F1DB2C6F34C0003737C5 /* NSBundle+changeBundleId.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

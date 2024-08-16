@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NSBundle+changeBundleId.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //模拟包名
+    NSString *fakeBundleId = @"com.company.fakeBundleId";
+    NSLog(@"fakeBundleId: %@", fakeBundleId);
+ 
+    [[NSBundle mainBundle] changeBundleIdentifier:(fakeBundleId && fakeBundleId.length > 0) ? fakeBundleId : nil];
+    
     return YES;
 }
 
